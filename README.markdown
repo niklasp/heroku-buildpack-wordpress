@@ -53,12 +53,12 @@ Open your new WordPress site in a web browser.
 $ heroku apps:open
 ```
 
-# Creating a S3 bucket for the wordpress
+#### Creating a S3 bucket for the wordpress
 * go to [https://console.aws.amazon.com/iam/home?#home](https://console.aws.amazon.com/iam/home?#home) and create a new user with the correct permission settings
 * create a new bucket 'projectname'
 * edit the cors policy file
 
-# update wordpress
+#### update wordpress
 * if there is a problem redirecting you to main page after telling the db was up to date: go to heroku.com apps and flush the memcache
 
 > Happy? Add your site to the growing [list of WordPress sites runnning on Heroku](https://github.com/mchung/heroku-buildpack-wordpress/wiki/Sites-running-WordPress-on-Heroku).
