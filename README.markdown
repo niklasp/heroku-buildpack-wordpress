@@ -57,6 +57,7 @@ $ heroku apps:open
 * go to [https://console.aws.amazon.com/iam/home?#home](https://console.aws.amazon.com/iam/home?#home) and create a new user with the correct permission settings
 * create a new bucket 'projectname'
 * edit the cors policy file
+* create a new user and add it to the correct group
 
 #### update wordpress
 * if there is a problem redirecting you to main page after telling the db was up to date: go to heroku.com apps and flush the memcache
