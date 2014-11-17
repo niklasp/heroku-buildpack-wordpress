@@ -25,8 +25,8 @@ $ git clone git://github.com/your_name/wordpress-on-heroku.git 99catfacts.com
 Create WordPress on Heroku.
 ```bash
 $ cd 99catfacts.com
-$ heroku create -s cedar
-$ heroku config:add BUILDPACK_URL=https://github.com/mchung/heroku-buildpack-wordpress.git
+$ heroku create projectname -s cedar --region eu
+$ heroku config:add BUILDPACK_URL=https://github.com/niklasp/heroku-buildpack-wordpress.git
 ```
 
 > Don't have the Heroku Toolbelt installed? Follow these [quickstart instructions](https://devcenter.heroku.com/articles/quickstart). Takes about 2 minutes.
@@ -52,6 +52,11 @@ Open your new WordPress site in a web browser.
 ```bash
 $ heroku apps:open
 ```
+
+Creating a S3 bucket for the wordpress
+* go to [https://console.aws.amazon.com/iam/home?#home](https://console.aws.amazon.com/iam/home?#home) and create a new user with the correct permission settings
+* create a new bucket 'projectname'
+* edit the cors policy file
 
 > Happy? Add your site to the growing [list of WordPress sites runnning on Heroku](https://github.com/mchung/heroku-buildpack-wordpress/wiki/Sites-running-WordPress-on-Heroku).
 
