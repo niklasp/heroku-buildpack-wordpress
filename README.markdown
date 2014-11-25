@@ -19,12 +19,12 @@ Fork and rename the [WordPress project template](http://github.com/mchung/wordpr
 
 Let's clone the repository for a new blog, 99catfacts.com
 ```bash
-$ git clone git://github.com/your_name/wordpress-on-heroku.git 99catfacts.com
+$ git clone https://github.com/niklasp/wordpress-on-heroku.git projectname
 ```
 
 Create WordPress on Heroku.
 ```bash
-$ cd 99catfacts.com
+$ cd projectname
 $ heroku create projectname -s cedar --region eu
 $ heroku config:add BUILDPACK_URL=https://github.com/niklasp/heroku-buildpack-wordpress.git
 ```
