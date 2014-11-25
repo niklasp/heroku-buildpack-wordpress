@@ -25,6 +25,7 @@ $ git clone https://github.com/niklasp/wordpress-on-heroku.git projectname
 Create WordPress on Heroku.
 ```bash
 $ cd projectname
+#make use of the correct heroku account
 $ heroku create projectname -s cedar --region eu
 $ heroku config:add BUILDPACK_URL=https://github.com/niklasp/heroku-buildpack-wordpress.git
 ```
